@@ -1,0 +1,158 @@
+@import './general';
+
+.film {
+    position: relative;
+
+    &__title {
+        padding: 10px 0;
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 12%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        color: #fff;
+        text-align: center;
+    }
+
+    &__menu {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        padding: 20px;
+        margin-bottom: 15px;
+        width: 290px;
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        color: rgba(37, 37, 44, 0.795);
+        align-self: stretch;
+        box-shadow: 8px 6px 7px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+
+        &:hover {
+            transition: 0.3s;
+            transform: scale(1.01);
+        }
+    }
+
+    &__genre--list {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        background: linear-gradient(to right, #30CFD0 5%, #330867 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__img {
+        width: 255px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 10px 0;
+        font-weight: 700;
+        font-size: 20px;
+        background: -webkit-linear-gradient(rgb(230, 208, 18), rgb(224, 216, 216));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__time {
+        font-family: 'Arial';
+        font-weight: 700;
+        font-size: 20px;
+        display: block;
+        float: left;
+        margin: 10px 0;
+        background: #FF0000;
+        background: -webkit-linear-gradient(to left, #FF0000 0%, #ffff00 4%, #FF0000 100%);
+        background: -moz-linear-gradient(to left, #FF0000 0%, #ffff00 4%, #FF0000 100%);
+        background: linear-gradient(to left, #FF0000 0%, #ffff00 4%, #FF0000 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.form {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+
+    &__input {
+        max-width: 100%;
+        width: 60%;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        margin: 20px auto;
+        margin-bottom: 25px;
+        box-shadow: 5px 4px 7px 1px rgba(0, 0, 0, 0.5);
+        border: 0.3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 0.7959558823529411) 100%);
+
+        &:hover {
+            box-shadow: 0 0 15px 2px #000;
+        }
+    }
+
+    &__select {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 60%;
+        padding: 10px 10px;
+        display: block;
+        margin-bottom: 25px;
+        font-size: 20px;
+        box-shadow: 5px 4px 7px 1px rgba(0, 0, 0, 0.5);
+        border: 0.3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 0.7959558823529411) 100%);
+
+        &:hover {
+            box-shadow: 0 0 15px 2px #000;
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 30%;
+        padding: 10px;
+        font-size: 20px;
+        box-shadow: 5px 4px 7px 1px rgba(0, 0, 0, 0.5);
+        border: 0.3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        color: #000;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+        &:hover {
+            background-color: #c4c4c4;
+            box-shadow: 0 0 15px 2px #000;
+        }
+
+        &:active {
+            opacity: 0.7
+        }
+    }
+
+    &__label {
+        text-align: center;
+        display: block;
+        font-family: 'Arial';
+        font-weight: 600;
+        font-size: 20px;
+        color: #000
+    }
+
+}

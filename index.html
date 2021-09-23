@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <section class="film">
+        <div class="container">
+            <h1 class="film__title">Films</h1>
+            <form id="form">
+                <input class="form__input" id="search" type="search" placeholder="search ...">
+                <label class="form__label">
+                    Janrlar Bo'yicha Qidirish
+                    <select class="form__select" id="select">
+                        <option class="option" value="All">All</option>
+                    </select>
+                </label>
+
+                <label class="form__label">
+                    Filtrlash
+                    <select class="form__select" id="select-sort" name="movies_genres">
+                        <option disabled selected value="All">Filtirlash</option>
+                        <option value="a_z">A_Z</option>
+                        <option value="z_a">Z_A</option>
+                        <option value="old_new">OLD_NEW</option>
+                        <option value="new_old">NEW_OLD</option>
+                    </select>
+                </label>
+                <button class="form__button" type="submit" id="btn">Submit</button>
+            </form>
+            <ul class="film__menu"></ul>
+        </div>
+    </section>
+    
+    <script src="./js/util.js"></script>
+    <script src="./js/films.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
